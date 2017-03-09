@@ -25,8 +25,8 @@ https://developer.apple.com/library/ios/releasenotes/General/ValidateAppStoreRec
   s.preserve_paths = 'lib/libcrypto.a', 'openssl'
   s.libraries    = "crypto"
   s.xcconfig     = {
-    'LIBRARY_SEARCH_PATHS' => '"/code/DHAppleReceiptParser/lib"',
-    'HEADER_SEARCH_PATHS' => '"/code/DHAppleReceiptParser/include/**" "/code/DHAppleReceiptParser/include/openssl"',
+    'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/DHAppleReceiptParser/lib"',
+    'HEADER_SEARCH_PATHS' => '"$(PODS_ROOT)/DHAppleReceiptParser/include/**" "$(PODS_ROOT)/DHAppleReceiptParser/include/openssl"',
   }
 
 end
