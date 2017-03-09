@@ -57,6 +57,8 @@ typedef enum {
 @property(readonly, nonatomic) NSArray<DHInAppReceipt *> * _Nonnull inAppReceipts;
 @property(readonly) NSString * _Null_unspecified originalApplicationVersion;
 
++- (DHInAppReceipt * _Nullable)receiptForProductId:(NSString * _Nonnull)productId;
+
 @end
 
 @interface DHInAppReceipt : DHASN1Parser
